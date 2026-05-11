@@ -1,6 +1,6 @@
 {
     "name": "ExampleCosmetics",
-    "version_number": "0.1.0",
+    "version_number": "0.1.1",
     "website_url": "https://github.com/V8gaming/GWYF-MoreCosmetics",
     "description": "Example cosmetic pack for More Cosmetics. Adds 4 cosmetics: custom textured suit, tinted shirt, beanie, and bowtie.",
     "dependencies": [
