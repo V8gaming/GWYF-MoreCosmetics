@@ -1,11 +1,11 @@
 # More Cosmetics
 
-BepInEx **library** that adds custom clothing/cosmetics to [Gamble With Your Friends](https://store.steampowered.com/app/2327790/Gamble_With_Your_Friends/). Supports custom OBJ models, PNG textures, and vanilla model tinting — all driven by a simple JSON file. Cosmetic packs auto-discovered from plugin folders.
+BepInEx **library** that adds custom clothing/cosmetics to [Gamble With Your Friends](https://store.steampowered.com/app/2327790/Gamble_With_Your_Friends/). Supports custom OBJ models, PNG textures, and vanilla model tinting - all driven by a simple JSON file. Cosmetic packs auto-discovered from plugin folders.
 
 ## How It Works
 
 1. Install **More Cosmetics** (the library DLL) and at least one cosmetic pack
-2. Cosmetic packs are just folders with a `cosmetics.json` — auto-discovered by the library
+2. Cosmetic packs are just folders with a `cosmetics.json` - auto-discovered by the library
 3. Cosmetics are injected into the game's wardrobe at runtime
 4. All cosmetics are auto-unlocked by default
 
@@ -14,10 +14,10 @@ BepInEx **library** that adds custom clothing/cosmetics to [Gamble With Your Fri
 Drop a folder in `BepInEx/plugins/` with:
 
 ```
-MyCoolCosmetics/
-├── cosmetics.json        ← required — defines your cosmetics
-├── models/              ← optional — .obj files from Blender
-└── textures/            ← optional — .png texture files
+MyCosmetics/
+├── cosmetics.json        ← required - defines your cosmetics
+├── models/              ← optional - .obj files from Blender
+└── textures/            ← optional - .png texture files
 ```
 
 ### `cosmetics.json` Format

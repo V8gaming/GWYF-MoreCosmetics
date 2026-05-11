@@ -13,14 +13,14 @@ Example cosmetic pack for [More Cosmetics](https://thunderstore.io/c/gamble-with
 
 ## How It Works
 
-This pack is just a folder with a `cosmetics.json` and assets. The More Cosmetics library auto-discovers it — no special code needed.
+This pack is just a folder with a `cosmetics.json` and assets. The More Cosmetics library auto-discovers it, no special code needed.
 
 ## Creating Your Own Pack
 
 1. Create a folder under `BepInEx/plugins/`
 2. Add a `cosmetics.json` following the [More Cosmetics format](https://thunderstore.io/c/gamble-with-your-friends/p/MrMeeseeks/MoreCosmetics/)
 3. Drop `.obj` files in `models/` and `.png` textures in `textures/`
-4. Restart the game — cosmetics appear in the wardrobe
+4. Restart the game - cosmetics appear in the wardrobe
 
 `cosmetics.json` is all you need, but the ExampleCosmetics.dll, is needed to enforces the bepinex Dependencies and is needed for the Thunderstore upload.
 
