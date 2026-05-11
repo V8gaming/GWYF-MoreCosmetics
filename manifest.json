@@ -1,7 +1,7 @@
 {
     "name": "MoreCosmetics",
     "version_number": "0.2.0",
-    "website_url": "https://github.com/<your-repo>",
+    "website_url": "https://github.com/V8gaming/GWYF-MoreCosmetics",
     "description": "Adds custom clothing/cosmetics to Gamble With Your Friends. Create cosmetic packs with a simple JSON file — supports custom OBJ models, PNG textures, and vanilla model tinting.",
     "dependencies": [
         "BepInEx-BepInExPack-5.4.2305"
