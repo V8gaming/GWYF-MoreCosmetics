@@ -1,10 +1,10 @@
 {
     "name": "ExampleCosmetics",
-    "version_number": "0.1.1",
+    "version_number": "0.1.2",
     "website_url": "https://github.com/V8gaming/GWYF-MoreCosmetics",
     "description": "Example cosmetic pack for More Cosmetics. Adds 4 cosmetics: custom textured suit, tinted shirt, beanie, and bowtie.",
     "dependencies": [
         "BepInEx-BepInExPack-5.4.2305",
-        "mrmeeseeks-MoreCosmetics-0.2.0"
+        "mrmeeseeks-MoreCosmetics-0.2.2"
     ]
 }
