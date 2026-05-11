@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Custom Suit",
+    "type": "Clothing",
+    "rarity": "Legendary",
+    "description": "A custom textured suit.",
+    "model": { "obj": "suit_1.obj" },
+    "texture": "custom_suit_1.png"
+  },
+  {
+    "name": "Blue Tinted Shirt",
+    "type": "Clothing",
+    "model": { "vanilla": "Shirt 1" },
+    "tint": [0.2, 0.5, 1.0]
+  },
+  {
+    "name": "Red Beanie",
+    "type": "Hat",
+    "model": { "vanilla": "Beanie 1" },
+    "tint": [0.9, 0.1, 0.1]
+  },
+  {
+    "name": "Gold Bowtie",
+    "type": "Neckwear",
+    "model": { "vanilla": "Bowtie 2" },
+    "tint": [1.0, 0.8, 0.1]
+  }
+]

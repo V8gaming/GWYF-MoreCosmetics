@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>ExampleCosmetics</AssemblyName>
+    <Version>0.1.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GameDir>C:\SteamLibrary\steamapps\common\Gamble With Your Friends</GameDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx">
+      <HintPath>$(GameDir)\BepInEx\core\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(GameDir)\Gamble With Your Friends_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(GameDir)\Gamble With Your Friends_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="DeployToGame" AfterTargets="Build">
+    <MakeDir Directories="$(GameDir)\BepInEx\plugins\ExampleCosmetics" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(GameDir)\BepInEx\plugins\ExampleCosmetics" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\cosmetics.json" DestinationFolder="$(GameDir)\BepInEx\plugins\ExampleCosmetics" />
+    <MakeDir Directories="$(GameDir)\BepInEx\plugins\ExampleCosmetics\models" />
+    <MakeDir Directories="$(GameDir)\BepInEx\plugins\ExampleCosmetics\textures" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\models\suit_1.obj" DestinationFolder="$(GameDir)\BepInEx\plugins\ExampleCosmetics\models" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\textures\custom_suit_1.png" DestinationFolder="$(GameDir)\BepInEx\plugins\ExampleCosmetics\textures" />
+    <Message Importance="high" Text="Deployed ExampleCosmetics to $(GameDir)\BepInEx\plugins\ExampleCosmetics\" />
+  </Target>
+
+</Project>
